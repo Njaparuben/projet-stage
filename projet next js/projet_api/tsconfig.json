@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "Frontend/form.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Frontend/forsrc/app/Frontend/pageUsers.jsxUsersrc/app/Frontend/pagePosts.jsxPosts.jsx"],
   "exclude": ["node_modules"]
 }

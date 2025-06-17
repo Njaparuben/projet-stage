@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+}
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.userId{
+width: 30%;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(99, 97, 97, 0.1);
+}
+
+.user img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .userId {
+        width: 40%;
+    }
+}
+@media (max-width: 480px) {
+    .userId {
+        width: 100%;
+    }
+}
+

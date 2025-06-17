@@ -1,0 +1,51 @@
+/* app/your-route/page.module.css (ou pages/your-route/page.module.css) */
+
+.commentsContainer {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.commentsContainer h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.commentItem {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.commentItem h2 {
+  font-size: 1.4em;
+  color: #0056b3;
+  margin-bottom: 5px;
+}
+
+.commentItem h3 {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.commentItem h4 {
+  font-size: 1em;
+  color: #777;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.commentItem p {
+  font-size: 0.95em;
+  color: #444;
+  line-height: 1.6;
+}
