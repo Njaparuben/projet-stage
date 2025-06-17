@@ -8,13 +8,13 @@ const Menu = () => (
         <Link href="/form">Formulaire</Link>
       </li>
       <li>
-        <Link href="/pagePosts">Posts</Link>
+        <Link href="/posts">Posts</Link>
       </li>
       <li>
-        <Link href="/pageUsers">Utilisateurs</Link>
+        <Link href="/users">Utilisateurs</Link>
       </li>
       <li>
-        <Link href="/pageComments">Commentaires</Link>
+        <Link href="/comments">Commentaires</Link>
       </li>
     </ul>
     <style jsx>{`
