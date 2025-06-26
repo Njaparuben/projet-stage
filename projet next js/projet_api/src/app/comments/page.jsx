@@ -1,4 +1,4 @@
-import styles from './pageComment.module.css'; // Assurez-vous que ce fichier CSS existe bien
+ // Assurez-vous que ce fichier CSS existe bien
 
 export default async function PageComments() {
   // 1. On récupère toutes les données dont on a besoin
@@ -20,8 +20,8 @@ export default async function PageComments() {
   const usersMap = new Map(users.map(user => [user.id, user]));
 
   return (
-    <div className={styles.commentsContainer}> {/* Utilisation d'un nom de classe plus approprié */}
-      <h1>Commentaires des Articles</h1>
+    <div className='max-w-900px m-20 p-20 bg-white border-radius-8px shadow-md '> {/* Utilisation d'un nom de classe plus approprié */}
+      <h1 className='bg-white border-radius-6px border-1px solid black mb-20 shadow-md p-10 text-black align-items-center justify-center'>Commentaires des Articles</h1>
       {comments.map((comment) => {
         // Pour chaque commentaire, on cherche le post associé
         const post = postsMap.get(comment.postId);
@@ -34,15 +34,15 @@ export default async function PageComments() {
         // On affiche le commentaire seulement si le post associé existe
         if (post) { // On s'assure que le post existe bien avant d'essayer d'afficher ses infos
           return (
-            <div key={comment.id} className={styles.commentItem}> {/* Nom de classe plus approprié */}
+            <div key={comment.id} className='bg-white text-black border-radius-6px border-1px solid gray mb-20 shadow-md p-20 '> {/* Nom de classe plus approprié */}
               {/* Le titre de l'article auquel le commentaire est lié */}
-              <h2>Article: {post.title}</h2>
+              <h2 className='font-size-1.1em color-gray-555 mt-5 mb-5'>Article: {post.title}</h2>
               {/* Le nom de l'auteur de l'article, si trouvé */}
               {postAuthor && <h3>Auteur de l'article: {postAuthor.firstname}</h3>}
               {/* Le nom de l'auteur du commentaire */}
-              <h4>Commentaire : {comment.name}</h4> 
+              <h4 className='color-gray-777 font-size-1em mt-5 mb-10'>Commentaire : {comment.name}</h4>
               {/* Le corps du commentaire */}
-              <p>{comment.comment}</p>
+              <p className='color-gray-444 font-size-0.95em line-light-1.6'>{comment.comment}</p>
             </div>
           );
         }

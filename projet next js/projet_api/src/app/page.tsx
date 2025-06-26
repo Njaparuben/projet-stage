@@ -2,53 +2,21 @@
 import Link from 'next/link';
 
 const Menu = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href="/form">Formulaire</Link>
+  <nav className='bg-white p-4 shadow-md text-black flex justify-center align-items-center box-shadow-md mb-2rem'>
+    <ul className='list-none flex gap-1rem m-0 p-0 '>
+      <li className='m-0 '>
+        <Link href="/form" className='ml-10 text-black  text-decoration-none hover:text-blue-500 hover:text-decoration-underline hover:font-bold'>Formulaire</Link>
       </li>
-      <li>
-        <Link href="/posts">Posts</Link>
+      <li className='m-0'>
+        <Link href="/posts" className='ml-10 text-black text-decoration-none hover:text-blue-500 hover:text-decoration-underline hover:font-bold'>Posts</Link>
       </li>
-      <li>
-        <Link href="/users">Utilisateurs</Link>
+      <li className='m-0'>
+        <Link href="/users" className='ml-10 text-black text-decoration-none hover:text-blue-500 hover:text-decoration-underline hover:font-bold'>Utilisateurs</Link>
       </li>
-      <li>
-        <Link href="/comments">Commentaires</Link>
+      <li className='m-0'>
+        <Link href="/comments" className='ml-10 text-black text-decoration-none hover:text-blue-500 hover:text-decoration-underline hover:font-bold'>Commentaires</Link>
       </li>
-    </ul>
-    <style jsx>{`
-  
-      nav {
-        background:rgb(179, 178, 178);
-        padding: 1rem;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 10px 10px 10px rgba(19, 18, 18, 0.1);
-        margin-bottom: 2rem;
-      }
-      ul {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        margin: 0;
-      }
-      a {
-        text-decoration: none;
-        color: #333;
-      }
-      a:hover {
-        text-decoration: underline;
-        font-weight: bold;
-        color:rgb(230, 207, 4);
-      }
-    `}</style>
+    </ul>   
   </nav>
 );
 
