@@ -1,6 +1,5 @@
 interface Params {
     path: string,
-    filter?: any
 }
 export default async function fetchData(params: Params) {
     const { path } = params

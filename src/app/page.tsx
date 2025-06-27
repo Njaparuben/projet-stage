@@ -16,6 +16,9 @@ const Menu = () => (
       <li className='m-0'>
         <Link href="/comments" className='ml-10 text-black text-decoration-none hover:text-blue-500 hover:text-decoration-underline hover:font-bold'>Commentaires</Link>
       </li>
+      <li className='m-0'>
+        <Link href="/pages/user" className='ml-10 text-black text-decoration-none hover:text-blue-500 hover:text-decoration-underline hover:font-bold'>test</Link>
+      </li>
     </ul>   
   </nav>
 );
