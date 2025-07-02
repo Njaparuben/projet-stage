@@ -1,5 +1,9 @@
 "use client";
+
+import Faqs from '@/components/shared/faqs';
+import DefaultFaqs from '@/components/shared/faqs';
 import Link from 'next/link';
+
 
 const Menu = () => (
   <nav className='bg-white p-4 shadow-md text-black flex justify-center align-items-center box-shadow-md mb-2rem'>
@@ -19,8 +23,11 @@ const Menu = () => (
       <li className='m-0'>
         <Link href="/pages/user" className='ml-10 text-black text-decoration-none hover:text-blue-500 hover:text-decoration-underline hover:font-bold'>test</Link>
       </li>
+      <Faqs title='Question 1' description='reponse 1' />
     </ul>   
+
   </nav>
+  
 );
 
 export default Menu;

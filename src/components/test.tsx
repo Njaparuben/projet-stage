@@ -10,7 +10,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 
-export function CollapsibleDemo() {
+export default function CollapsibleDemo() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
